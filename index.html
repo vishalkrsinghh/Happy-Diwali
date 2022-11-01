@@ -21,7 +21,6 @@
 
     <script src="https://kit.fontawesome.com/a85cd81b06.js" crossorigin="anonymous"></script>
 
-    
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" href="dia icon.PNG" type="icon.png">
@@ -29,19 +28,20 @@
 
 </head>
 
-<body>
-    <nav class="navbar">
+<body id="body">
+    <nav class="navbar" id="navbar">
         <a href="" class="logo"> <img class="lgo" src="dia icon.PNG" alt=""> </a>
         <input type="checkbox" id="togl">
-        <label for="togl"> <span class="material-symbols-outlined"> menu</span> </label>
-        <div class="menu">
+        <label for="togl"> <span class="material-symbols-outlined" id="menu"> menu</span> </label>
+        <div class="menu" id="meno">
 
             <ul class="list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#quotes">Quotes </a></li>
                 <li><a href="#image">Diwali picture</a></li>
                 <li><a href="#about">About</a></li>
-
+                <i class="fa-solid fa-moon" id="moon" onclick="glow()" ondblclick="off()"
+                    title="SINGLE CLICK, DOUBLE CLICK "></i>
 
             </ul>
         </div>
@@ -163,16 +163,16 @@
 
                 <img src="https://blog.datetheramp.com/wp-content/uploads/2018/10/Diya-Images.jpg" alt="" class="diaw">
                 <h4>dia Images</h4>
-                <p class="sild"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore asperiores aliquam,
-                    labore repellendus commodi debitis. </p>
+                <p class="sild"> May Light prevail over the darkness and brighten up every slum, countryside, and home with the flow
+                    of abundance. </p>
             </div>
             <div class="sil">
 
                 <img src="https://1.bp.blogspot.com/_mfK7xvLSeDE/TM7xVB7vPrI/AAAAAAAAAwM/xoNSkXpp3PI/s400/Diwali-Diya-1.jpeg"
                     alt="" class="diaw">
                 <h4>dia Images</h4>
-                <p class="sild"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore asperiores aliquam,
-                    labore repellendus commodi debitis. </p>
+                <p class="sild"> This Diwali - give your daughter wings to fly and let her conquer the world with her knowledge,
+                    grit, and passion for excellence. </p>
             </div>
 
             <div class="sil">
@@ -180,38 +180,38 @@
                 <img src="https://www.asiamediajournal.com/wp-content/uploads/2020/11/Diya-Photos-672x420.jpg" alt=""
                     class="diaw">
                 <h4>dia Images</h4>
-                <p class="sild"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore asperiores aliquam,
-                    labore repellendus commodi debitis. </p>
+                <p class="sild"> May the bright lights of Diwali broaden your horizon to the limitless sky! Wish you continue to
+                    inspire everyone around you. </p>
             </div>
             <div class="sil">
 
                 <img src="https://2.bp.blogspot.com/-9oXUzZ05ptM/WdnumeWSMFI/AAAAAAAAAEQ/l5WXF8hgm4YWUgr928hksE7NgMqX5jDCQCLcBGAs/s1600/Deepavali%2B2017%2BLamp%2BPNG.jpg"
                     alt="" class="diaw">
                 <h4>dia Images</h4>
-                <p class="sild"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore asperiores aliquam,
-                    labore repellendus commodi debitis. </p>
+                <p class="sild"> This Diwali - May these lights help you to achieve the success that your hard work deserves. Happy
+                    Diwali to the most dedicated person I know! </p>
             </div>
             <div class="sil" id="sil">
 
                 <img src="https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/74172/300/200/m1/fpc/wm0/burning-candles-.jpg?1392289775&s=bf148361d6dacb42b384395b8e9b664c"
                     alt="" class="diaw">
                 <h4>dia Images</h4>
-                <p class="sild"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore asperiores aliquam,
-                    labore repellendus commodi debitis. </p>
+                <p class="sild"> On this Diwali - I want to know that you have brightened so many lives with your knowledge and
+                    wisdom. Keep shining from within and keep radiating this inner wisdom to all. </p>
             </div>
             <div class="sil">
 
                 <img src="https://th.bing.com/th/id/OIP.1B3hiYDXEhtvYmUBGUynLgAAAA?pid=ImgDet&rs=1" alt="" class="diaw">
                 <h4>dia Images</h4>
-                <p class="sild"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore asperiores aliquam,
-                    labore repellendus commodi debitis. </p>
+                <p class="sild">  On this Diwali - I want to know that you have brightened so many lives with your knowledge and
+                    wisdom. Keep shining from within and keep radiating this inner wisdom to all.</p>
             </div>
             <div class="sil">
 
                 <img src="https://blog.datetheramp.com/wp-content/uploads/2018/10/Diya-Images.jpg" alt="" class="diaw">
                 <h4>dia Images</h4>
-                <p class="sild"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore asperiores
-                    aliquam,labore repellendus commodi debitis. </p>
+                <p class="sild"> May Diwali usher you into the new beginnings which are brimming with serendipitous love,
+                    togetherness, and prosperity. </p>
             </div>
 
         </div>
@@ -219,7 +219,7 @@
     </section>
 
     <hr>
-    <footer>
+    <footer id="footer">
 
         <div class="foot">
 
@@ -228,7 +228,7 @@
             <span class="xyz">
                 <a href="mailto:vk788043@gmail.com">
 
-                    <lord-icon class="em" src="https://cdn.lordicon.com/tkgyrmwc.json" trigger="loop-on-hover"
+                    <lord-icon class="em" id="em" src="https://cdn.lordicon.com/tkgyrmwc.json" trigger="loop-on-hover"
                         delay="2000">
                     </lord-icon>
 
@@ -240,7 +240,7 @@
 
                 <a href="tel:8510036236">
 
-                    <lord-icon class="em" src="https://cdn.lordicon.com/cnyeuzxc.json" trigger="loop-on-hover"
+                    <lord-icon class="em" id="emm" src="https://cdn.lordicon.com/cnyeuzxc.json" trigger="loop-on-hover"
                         state="hover-phone-ring" style=" height:22px; "> </lord-icon>
 
 
@@ -250,7 +250,7 @@
 
             <span class="social">
 
-                <lord-icon class="em" src="https://cdn.lordicon.com/iifryyua.json" trigger="loop-on-hover"
+                <lord-icon class="em" id="emmm" src="https://cdn.lordicon.com/iifryyua.json" trigger="loop-on-hover"
                     style="width:22px; margin-left: -4px; "> </lord-icon>
 
                 <a href=" www.facebook.com"> <i class="fa-brands fa-facebook" style=" color:blue;"></i>
@@ -294,6 +294,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js" type="text/javascript"></script>
 
 </body>
 
