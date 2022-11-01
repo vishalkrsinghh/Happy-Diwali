@@ -21,6 +21,11 @@
 
 }
 
+#moon:hover{
+
+    cursor: pointer;
+}
+
 .navbar a,a {
 
     text-decoration: none;
