@@ -1,0 +1,414 @@
+
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 15px;
+    box-shadow: 0px 0px 15px #ffc965;
+    position: sticky;
+    top: 0.5px;
+
+}
+
+.navbar a,a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.logo {
+
+    margin-right: 50px;
+}
+
+.list {
+
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#togl,
+.navbar label {
+
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+
+    .menu {
+
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: antiquewhite;
+    }
+
+    .list {
+
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #togl:checked~.menu {
+
+        max-height: 100%;
+    }
+}
+
+
+
+
+body {
+
+    background-color: rgb(255 200 181);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+h1 {
+
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 20px;
+    margin-bottom: -35px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.imag {
+
+    height: 50vh;
+    margin-top: 70px;
+    border-radius: 20px;
+    background-image: url('https://blog.datetheramp.com/wp-content/uploads/2018/10/Diya-Images.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes change {
+
+    25%{
+     background-image: url('https://wallpapercave.com/wp/wp4832280.jpg');   
+    }
+
+    50%{
+     background-image: url('https://1.bp.blogspot.com/_mfK7xvLSeDE/TM7xVB7vPrI/AAAAAAAAAwM/xoNSkXpp3PI/s400/Diwali-Diya-1.jpeg');   
+    }
+
+    75%{
+     background-image: url('https://examresultz.in/wp-content/uploads/2016/10/Laxmi-ganesh-photo-for-whatsapp-dp-wallpaper.jpg');   
+    }
+
+    100%{
+     background-image: url('https://www.hindisoch.com/wp-content/uploads/2017/07/Maa-Laxmi-with-Ganesha.jpg');   
+    }
+
+    
+}
+
+.diya {
+    padding: 10px 0px;
+
+}
+
+@media screen and (min-width:689px) {
+
+    .quotc {
+
+        margin: 0px 10px;
+    }
+
+    .im {
+
+        margin: 0px 10px;
+    }
+}
+
+@keyframes blink {
+
+    10% {
+
+        color: aqua;
+    }
+
+    20% {
+
+        color: blue;
+    }
+
+    30% {
+
+        color: blueviolet;
+        /* font-family: 'Baloo Bhai 2', cursive; */
+    }
+
+    40% {
+
+        color: brown;
+    }
+
+    50% {
+
+        color: chartreuse;
+    }
+
+    60% {
+
+        color: chocolate;
+        
+    }
+
+    70% {
+
+        color: coral;
+    }
+
+    80% {
+        color: cornflowerblue;
+
+    }
+
+    90% {
+        color: crimson;
+        /* font-family: 'Ubuntu', sans-serif; */
+
+    }
+
+    100% {
+
+        color: darkorange;
+    }
+
+}
+
+main {
+    padding: 0px 45px;
+}
+
+.quote {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imge {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+img.diaw {
+    width: 280px;
+    box-shadow: 0px 0px 10px orangered;
+    border-radius: 10px;
+}
+
+.diaw:hover {
+
+    box-shadow: 0px 0px 20px black;
+    border-radius: 15px;
+}
+
+.quotc {
+    width: 300px;
+    height: 335px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #b9b9f6;
+    margin-top: 30px;
+    padding: 0px 15px;
+
+}
+
+.im {
+
+    width: 300px;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.quotc:hover {
+
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+}
+
+img.cr {
+    border-radius: 50%;
+    margin: 15px 0px;
+    width: 100px;
+    height: 100px;
+}
+
+h2#quotes,
+#image {
+    margin: 50px 0px;
+    font-size: 1.7rem;
+}
+
+.h {
+
+    margin-top: 25px;
+}
+
+.sil {
+
+    width: 285px;
+    height: 450px;
+    margin: 5px 6px;
+    padding: 5px 8px;
+}
+
+.slidure::-webkit-scrollbar {
+
+    display: none;
+}
+
+h4,
+.sild {
+
+    text-align: center;
+    margin: 15px 5px;
+}
+
+.slidure {
+    display: flex;
+    width: 900px;
+    height: 460px;
+    overflow: scroll;
+
+}
+
+section {
+
+    display: flex;
+    margin: 20px 5px;
+    justify-content: center;
+
+}
+
+img.lgo {
+    border-radius: 50%;
+}
+
+
+
+
+footer {
+
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+@media (max-width:768px) {
+
+    footer {
+        background-color: #ff8a00;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .foot {
+        font-size: .6rem;
+    }
+
+}
+
+.em,
+.abcd {
+
+    background: transparent;
+    border: none;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    justify-content: flex-start;
+}
+
+span.social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    align-items: center;
+    margin-left: -8px;
+}
+
+.xyz {
+
+    margin-top: 15px;
+}
+
+.vks {
+    margin-top: 0px;
+    text-decoration: underline;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+.copy {
+    margin: auto;
+    width: fit-content;
+}
+
+h5 {
+
+    margin-top: -25px;
+}
+
+.lorem {
+    border: 2px solid black;
+    width: fit-content;
+}
+
+
+.right {
+
+    width: fit-content;
+    border: 2px solid white;
+}
+
+.fa-instagram {
+    padding-right: 2px;
+    padding-top: 1px;
+}
