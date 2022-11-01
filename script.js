@@ -1,5 +1,4 @@
 
-
 let body = document.getElementById("body")
 let moon = document.getElementById("moon")
 let menu = document.getElementById("menu")
@@ -9,6 +8,10 @@ let foot = document.getElementById("footer")
 let lordicon = document.getElementById("em")
 let lordicon2 = document.getElementById("emm")
 let lordicon3 = document.getElementById("emmm")
+let vishal= document.getElementById("vks")
+let about= document.getElementById("abo")
+let download= document.getElementById("down")
+let product=document.getElementById("pro")
 
 
 let glow = () => {
@@ -20,6 +23,10 @@ let glow = () => {
     nav.style.backgroundColor = "#111827"
     meno.style.backgroundColor = "#111827"
     foot.style.backgroundColor = "#111827"
+    download.style.color="orange"
+    about.style.color="orange"
+    product.style.color="orange"
+    vishal.style.color="orange"
 
 }
 let off = () => {
@@ -31,5 +38,9 @@ let off = () => {
     nav.style.backgroundColor = ""
     meno.style.backgroundColor = ""
     foot.style.backgroundColor = ""
+    download.style.color=""
+    about.style.color=""
+    product.style.color=""
+    vishal.style.color=""
 
 }
